@@ -7,8 +7,8 @@ import re
 import sys
 
 def consicutive(n):
-    s = bin(n)[2:]
-    m = max(len(group) for group in s.split('0'))
+    bin_str = bin(n)[2:]
+    m = max(len(group) for group in bin_str.split('0'))
     return m
  
 if __name__ == '__main__':
